@@ -1,0 +1,143 @@
+.my-login-body {
+    background-color: #1d8fff;
+    width: 100%;
+    height: 100vh;
+}
+
+.my-login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.my-login-card {
+    background-color: white;
+    width: 900px;
+    height: 550px;
+    border-radius: 1.5rem;
+    padding: 15px;
+    box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, .3);
+    display: flex;
+}
+
+.my-panel-1,
+.my-panel-2 {
+    flex: 1;
+}
+
+.my-panel-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-panel-1 img {
+    width: 100%;
+}
+
+.my-panel-2 {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.my-panel-2 .my-login-form h2{
+    font-family: NotoSansLao;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #1c57b5;
+    text-align: center;
+}
+
+.my-panel-2 .my-login-form p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1c57b5;
+}
+
+.my-panel-2 .logo {
+    width: 200px;
+    text-align: center;
+    margin: 0px auto;
+
+
+
+}
+
+.my-panel-2 .my-login-form {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-panel-2 .my-login-form .input-group {
+    margin-bottom: 1.5rem;
+    position: relative
+}
+
+.my-panel-2 .my-login-form .input-group input {
+    width: 100% !important;
+    border: 0;
+    padding: 7px 0;
+    padding-left: 2.5rem;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.my-panel-2 .my-login-form .input-group input~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #1c57b5;
+    transition: 0.4s;
+}
+
+.my-panel-2 .my-login-form .input-group input:focus~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.my-panel-2 .my-login-form .input-group i {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .5);
+}
+
+.my-panel-2 .my-login-form .input-group input:focus,.my-panel-2 .my-login-form .input-group input:focus::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.my-panel-2 .my-login-form .my-button{
+    background: #1c57b5;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px;
+    border: 1px solid #1c57b5;
+}
+
+@media only screen and (max-width: 820px){
+    .my-login-card{
+        width: 600px;
+    }
+
+    .my-panel-1{
+        display: none;
+    }
+}

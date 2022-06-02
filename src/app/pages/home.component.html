@@ -1,0 +1,110 @@
+<header class="ng-header">
+    <nav class="ng-navbar">
+        <a [routerLink]="['/']" class="logo">
+            <img src="../../assets/images/logo.png" alt="">
+        </a>
+
+        <button pButton icon="pi pi-bars" type="button" class="p-button-rounded p-button-plain p-button-text btn-toggle"></button>
+        <ul class="ng-menu">
+            <li class="ng-menu-item">
+                <a [routerLink]="['/']" class="ng-menu-link">ໜ້າຫຼັກ</a>
+            </li>
+            <li class="ng-menu-item ng-dropdown">
+                <a href="" class="ng-menu-link">ປະເພດເອກະສານ</a>
+
+                <ul class="ng-dropdown-menu">
+                    <li><a href="">ນິຕິກຳ</a></li>
+                    <li><a href="">ແຈ້ງການ</a></li>
+                    <li><a href="">ແຈ້ງການ</a></li>
+                </ul>
+            </li>
+            <li class="ng-menu-item ng-dropdown">
+                <a href="" class="ng-menu-link">ແຜນປີ</a>
+                <ul class="ng-dropdown-menu">
+                    <li><a href="">2021-2022</a></li>
+                    <li><a href="">2022-2023</a></li>
+                </ul>
+            </li>
+            <li class="ng-menu-item">
+                <a [routerLink]="['/login']" class="ng-menu-link">ເຂົ້າສູ່ລະບົບ</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main-content">
+    <div class="grid">
+        <div class="col-12 md:col-4">
+            <p-card header="My Card" subheader="01/06/2022">
+                <ng-template pTemplate="header">
+                    <img src="../../assets/images/login-img.png" alt="">
+                </ng-template>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quas corporis amet eius ipsa tenetur
+                unde
+                <ng-template pTemplate="footer">
+                    <button pButton label="ອ່ານຕໍ່" icon="pi pi-window-maximize" iconPos="right" class="p-button-success p-button-text"></button>
+                </ng-template>
+            </p-card>
+        </div>
+        <div class="col-12 md:col-4">
+            <p-card header="My Card" subheader="01/06/2022">
+                <ng-template pTemplate="header">
+                    <img src="../../assets/images/login-img.png" alt="">
+                </ng-template>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quas corporis amet eius ipsa tenetur
+                unde
+                <ng-template pTemplate="footer">
+                    <button pButton label="ອ່ານຕໍ່" icon="pi pi-window-maximize" iconPos="right" class="p-button-success p-button-text"></button>
+                </ng-template>
+            </p-card>
+        </div>
+        <div class="col-12 md:col-4">
+            <p-card header="My Card" subheader="01/06/2022">
+                <ng-template pTemplate="header">
+                    <img src="../../assets/images/login-img.png" style="width: 100%;" alt="">
+                </ng-template>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quas corporis amet eius ipsa tenetur
+                unde
+                <ng-template pTemplate="footer">
+                    <button pButton label="ອ່ານຕໍ່" icon="pi pi-window-maximize" iconPos="right" class="p-button-success p-button-text"></button>
+                </ng-template>
+            </p-card>
+        </div>
+        <div class="col-12 md:col-4">
+            <p-card header="My Card" subheader="01/06/2022">
+                <ng-template pTemplate="header">
+                    <img src="../../assets/images/login-img.png" alt="">
+                </ng-template>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quas corporis amet eius ipsa tenetur
+                unde
+                <ng-template pTemplate="footer">
+                    <button pButton label="ອ່ານຕໍ່" icon="pi pi-window-maximize" iconPos="right" class="p-button-success p-button-text"></button>
+                </ng-template>
+            </p-card>
+        </div>
+        <div class="col-12 md:col-4">
+            <p-card header="My Card" subheader="01/06/2022">
+                <ng-template pTemplate="header">
+                    <img src="../../assets/images/login-img.png" alt="">
+                </ng-template>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quas corporis amet eius ipsa tenetur
+                unde
+                <ng-template pTemplate="footer">
+                    <button pButton label="ອ່ານຕໍ່" icon="pi pi-window-maximize" iconPos="right" class="p-button-success p-button-text"></button>
+                </ng-template>
+            </p-card>
+        </div>
+        <div class="col-12 md:col-4">
+            <p-card header="My Card" subheader="01/06/2022">
+                <ng-template pTemplate="header">
+                    <img src="../../assets/images/login-img.png" alt="">
+                </ng-template>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quas corporis amet eius ipsa tenetur
+                unde
+                <ng-template pTemplate="footer">
+                    <button pButton label="ອ່ານຕໍ່" icon="pi pi-window-maximize" iconPos="right" class="p-button-success p-button-text"></button>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+    <p-paginator [rows]="10" [totalRecords]="120" [rowsPerPageOptions]="[10,20,30]"></p-paginator>
+</div>
