@@ -10,15 +10,16 @@
                     <h2>ເຂົ້າສູ່ລະບົບ</h2>
                     <div class="input-group">
                         <i class="pi pi-user"></i>
-                        <input pInputText id="name" placeholder="Username" type="text" />
+                        <input pInputText id="email" placeholder="Enter E-mail" type="email" />
                         <span class="focus-border"></span>
                     </div>
                     <div class="input-group">
                         <i class="pi pi-lock"></i>
-                        <input pPassword id="password" placeholder="Password" type="password" />
+                        <input pPassword id="password" placeholder="Enter Password" type="password" />
                         <span class="focus-border"></span>
                     </div>
                     <button [routerLink]="['/module/admin']" pButton label="ເຂົ້າສູ່ລະບົບ" type="button" class="my-button" ></button>
+                    <button [routerLink]="['/']" pButton label="ກັບຄືນ" type="button" class="p-button-danger" ></button>
                 </div>
             </div>
         </div>
