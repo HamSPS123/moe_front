@@ -2,7 +2,6 @@ import {RouterModule} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {AppMainComponent} from './pages/app.main.component';
 import {AppNotfoundComponent} from './pages/app.notfound.component';
-import {AppLoginComponent} from './pages/app.login.component';
 import { HomeComponent } from './pages/home.component';
 
 @NgModule({
@@ -12,6 +11,9 @@ import { HomeComponent } from './pages/home.component';
                 path: 'module', component: AppMainComponent,
                 children: [
                     { path: 'admin', loadChildren: () => import('./modules/admin/admin.module').then(m => m.AdminModule) },
+                    { path: 'demand', loadChildren: () => import('./modules/demand/demand.module').then(m => m.DemandModule) },
+                    { path: 'hrd', loadChildren: () => import('./modules/hrd/hrd.module').then(m => m.HrdModule) },
+                    { path: 'supply', loadChildren: () => import('./modules/supply/supply.module').then(m => m.SupplyModule) },
                 ]
             },
             {path: '', component: HomeComponent},
